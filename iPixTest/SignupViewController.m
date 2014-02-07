@@ -9,12 +9,18 @@
 #import "SignupViewController.h"
 #import <Parse/Parse.h>
 
-@interface SignupViewController ()
+@interface SignupViewController ()<UITextFieldDelegate>
 
 
 @end
 
 @implementation SignupViewController
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self.view endEditing:YES];
+    return  YES;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,6 +35,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.title = @"Signup";
 }
 
 - (void)didReceiveMemoryWarning

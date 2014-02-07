@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import <Parse/Parse.h>
 
-@interface ViewController ()
+@interface ViewController ()<UITextFieldDelegate>
 
 @property (strong, nonatomic) NSString *userID;
 @property (strong, nonatomic) NSString *userPass;
@@ -18,10 +18,16 @@
 
 @implementation ViewController
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self.view endEditing:YES];
+    return  YES;
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.title = @"Login";
     if ([PFUser currentUser]) {
         [self performSegueWithIdentifier:@"pushWelcomeScreen" sender:self];
     }
