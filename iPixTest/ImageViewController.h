@@ -20,7 +20,6 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *mainImage;
 
-
 @property (strong, nonatomic) IBOutlet UIView *colorView;
 @property (strong, nonatomic) IBOutlet UIView *fxView;
 @property (strong, nonatomic) IBOutlet UIView *rotateView;
@@ -32,11 +31,9 @@
 - (IBAction)brightness:(id)sender;
 - (IBAction)contrast:(id)sender;
 
-
 - (IBAction)sepia:(id)sender;
 - (IBAction)grayscale:(id)sender;
 - (IBAction)exposure:(id)sender;
-
 
 - (IBAction)rotate90:(id)sender;
 - (IBAction)rotate180:(id)sender;

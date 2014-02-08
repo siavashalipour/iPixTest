@@ -63,16 +63,13 @@
     if (![UIImagePickerController isSourceTypeAvailable:sourceType]) {
         return;
     }
-	
     UIImagePickerController*    imagePicker;
     imagePicker = [[UIImagePickerController alloc] init];
     imagePicker.sourceType = sourceType;
     imagePicker.allowsEditing = YES;
     imagePicker.delegate = self;
-	
     [self presentViewController:imagePicker animated:YES  completion:nil];
 }
-
 #pragma mark - UIImagePickerControllerDelegate
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
@@ -80,9 +77,7 @@
     NSLog(@"first");
     [self dismissViewControllerAnimated:YES completion:nil];
     [self performSegueWithIdentifier:@"editImage" sender:self];
-    
 }
-
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
     //[self dismissViewControllerAnimated:YES completion:^(void){
@@ -91,7 +86,6 @@
     //}];
     
 }
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"editImage"]) {

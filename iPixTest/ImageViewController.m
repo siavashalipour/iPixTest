@@ -7,6 +7,7 @@
 //
 
 #import "ImageViewController.h"
+#import "ShareViewController.h"
 
 @interface ImageViewController ()
 
@@ -190,7 +191,6 @@
     self.mainImage.image = self.img;
     self.originalImage = self.img;
 }
-
 - (IBAction)rotate90CW:(id)sender
 {
     selectedFilter = [[GPUImageFilter alloc] init];
@@ -201,7 +201,6 @@
     self.mainImage.image = self.img;
     self.originalImage = self.img;
 }
-
 - (IBAction)rotate180CW:(id)sender
 {
     selectedFilter = [[GPUImageTransformFilter alloc] init];
@@ -232,4 +231,12 @@
     [self unHideViewByName:@"rotateView" answer:YES];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"share"]) {
+        ShareViewController *VC = segue.destinationViewController;
+        VC.image = self.img;
+    }
+    
+}
 @end

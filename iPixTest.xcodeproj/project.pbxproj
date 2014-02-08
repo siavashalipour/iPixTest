@@ -35,6 +35,8 @@
 		44263F5618A480FC005C65DF /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44263F5518A480FC005C65DF /* WelcomeViewController.m */; };
 		44263F5918A48B5F005C65DF /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44263F5818A48B5F005C65DF /* ImageViewController.m */; };
 		443A596618A4AB2E00BD9C31 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A596518A4AB2E00BD9C31 /* ShareViewController.m */; };
+		443A5BA218A5FB1000BD9C31 /* WallImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A5BA118A5FB1000BD9C31 /* WallImageViewController.m */; };
+		443A5BA818A5FD4700BD9C31 /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 443A5BA718A5FD4700BD9C31 /* ImageCell.m */; };
 		44DAF5A018A499760063A60F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44DAF44118A499750063A60F /* InfoPlist.strings */; };
 		44DAF5A118A499760063A60F /* GPUImageTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44DAF44318A499750063A60F /* GPUImageTests-Info.plist */; };
 		44DAF5A218A499760063A60F /* GPUImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DAF44518A499750063A60F /* GPUImageTests.m */; };
@@ -272,6 +274,10 @@
 		4426417918A49045005C65DF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		443A596418A4AB2E00BD9C31 /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
 		443A596518A4AB2E00BD9C31 /* ShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		443A5BA018A5FB1000BD9C31 /* WallImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallImageViewController.h; sourceTree = "<group>"; };
+		443A5BA118A5FB1000BD9C31 /* WallImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallImageViewController.m; sourceTree = "<group>"; };
+		443A5BA618A5FD4700BD9C31 /* ImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
+		443A5BA718A5FD4700BD9C31 /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
 		44DAF21718A496A60063A60F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		44DAF43A18A499750063A60F /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = GPUImage.xcodeproj; sourceTree = "<group>"; };
 		44DAF44218A499750063A60F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -703,6 +709,10 @@
 				44263F5818A48B5F005C65DF /* ImageViewController.m */,
 				443A596418A4AB2E00BD9C31 /* ShareViewController.h */,
 				443A596518A4AB2E00BD9C31 /* ShareViewController.m */,
+				443A5BA018A5FB1000BD9C31 /* WallImageViewController.h */,
+				443A5BA118A5FB1000BD9C31 /* WallImageViewController.m */,
+				443A5BA618A5FD4700BD9C31 /* ImageCell.h */,
+				443A5BA718A5FD4700BD9C31 /* ImageCell.m */,
 				44263F1F18A37B78005C65DF /* Images.xcassets */,
 				44263F0E18A37B78005C65DF /* Supporting Files */,
 			);
@@ -1307,6 +1317,7 @@
 				44DAF64318A499770063A60F /* GPUImageZoomBlurFilter.m in Sources */,
 				44DAF5D518A499770063A60F /* GPUImageGammaFilter.m in Sources */,
 				44DAF5AA18A499760063A60F /* GPUImage3x3TextureSamplingFilter.m in Sources */,
+				443A5BA818A5FD4700BD9C31 /* ImageCell.m in Sources */,
 				44DAF5B918A499760063A60F /* GPUImageChromaKeyFilter.m in Sources */,
 				44DAF5AE18A499760063A60F /* GPUImageAmatorkaFilter.m in Sources */,
 				44DAF5FD18A499770063A60F /* GPUImageMotionBlurFilter.m in Sources */,
@@ -1355,6 +1366,7 @@
 				44DAF61E18A499770063A60F /* GPUImageSharpenFilter.m in Sources */,
 				44DAF62F18A499770063A60F /* GPUImageThreeInputFilter.m in Sources */,
 				44DAF5B718A499760063A60F /* GPUImageCGAColorspaceFilter.m in Sources */,
+				443A5BA218A5FB1000BD9C31 /* WallImageViewController.m in Sources */,
 				44263F5218A39582005C65DF /* SignupViewController.m in Sources */,
 				44DAF60418A499770063A60F /* GPUImageNormalBlendFilter.m in Sources */,
 				44DAF5EB18A499770063A60F /* GPUImageLanczosResamplingFilter.m in Sources */,
